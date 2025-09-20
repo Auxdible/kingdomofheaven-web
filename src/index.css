@@ -1,0 +1,46 @@
+@import "tailwindcss";
+@import "@fontsource/montserrat";
+@import "@fontsource/roboto";
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.font-montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+.font-roboto {
+  font-family: "Roboto", sans-serif;
+}
+.triangle {
+  clip-path: polygon(100% 0, 100% 100%, 0 0);
+}
+.triangle-reverse {
+  clip-path: polygon(0 0, 100% 100%, 0 100%);
+}
+.group:hover .triangle {
+  clip-path: polygon(100% 0, 100% 100%, 0 0);
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+@keyframes marquee-reverse {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
