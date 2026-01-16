@@ -8,6 +8,7 @@ import {
 } from "lucide-react";
 import { Marquee } from "../../components/marquee";
 import { FancyButton } from "../../components/fancy-button";
+import { Card, CardContent } from "@/components/ui/card";
 export function Home() {
   return (
     <main className="pb-40">
@@ -62,44 +63,50 @@ export function Home() {
             Welcome to Kingdom of Heaven!
           </h2>
           <ul className="w-full flex max-w-[1420px] max-xl:flex-col gap-5">
-            <li className="border-4 rounded-2xl px-4 flex-1 text-center">
-              <UsersIcon className="mx-auto my-5 mt-10" size={128} />
-              <h2 className="text-4xl font-bold py-5">Who are We?</h2>
-              <span className="text-xl font-roboto">Acts 2:42</span>
-              <p className="font-roboto text-2xl py-5">
-                We are a community of believers currently looking to expand our
-                online presence and connect with others who share our faith. We
-                are dedicated to fostering a welcoming environment where
-                everyone can grow in their relationship with Jesus and learn
-                more about the Bible.
-              </p>
-            </li>
-            <li className="border-4 rounded-2xl px-4 flex-1 text-center">
-              <Globe className="mx-auto my-5 mt-10" size={128} />
-              <h2 className="text-4xl font-bold py-5">Our Mission</h2>
-              <span className="text-xl font-roboto">Matthew 28:19-20</span>
-              <p className="font-roboto text-2xl py-5">
-                We are looking to passionately share the love of Jesus,
-                fostering a community of hope and support for Christians to grow
-                in their faith and understanding of the Bible. We desire to
-                create fellowship surrounding common interests, and to provide a
-                space for believers to connect, learn, and fellowship with
-                eachother.
-              </p>
-            </li>
-            <li className="border-4 rounded-2xl px-4 flex-1 text-center">
-              <HandHeart className="mx-auto my-5 mt-10" size={128} />
-              <h2 className="text-4xl font-bold py-5">Join us!</h2>
-              <span className="text-xl font-roboto">1 Thessalonians 5:11</span>
-              <p className="font-roboto text-2xl py-5">
-                We invite you to become part of our growing community. Whether
-                it&apos;s joining a Bible study, playing videogames with
-                likeminded Christians, engaging in online discussions, or
-                sharing your testimony, there&apos;s a place for you here.
-                Together, we can encourage one another in faith and build
-                lasting connections centered on Christ.
-              </p>
-            </li>
+            <Card className="flex-1">
+              <CardContent className="text-center">
+                <UsersIcon className="mx-auto my-5 mt-10" size={128} />
+                <h2 className="text-4xl font-bold py-5">Who are We?</h2>
+                <span className="text-xl font-roboto">Acts 2:42</span>
+                <p className="font-roboto text-2xl py-5">
+                  We are a community of believers currently looking to expand our
+                  online presence and connect with others who share our faith. We
+                  are dedicated to fostering a welcoming environment where
+                  everyone can grow in their relationship with Jesus and learn
+                  more about the Bible.
+                </p>
+              </CardContent>
+            </Card>
+            <Card className="flex-1">
+              <CardContent className="text-center">
+                <Globe className="mx-auto my-5 mt-10" size={128} />
+                <h2 className="text-4xl font-bold py-5">Our Mission</h2>
+                <span className="text-xl font-roboto">Matthew 28:19-20</span>
+                <p className="font-roboto text-2xl py-5">
+                  We are looking to passionately share the love of Jesus,
+                  fostering a community of hope and support for Christians to grow
+                  in their faith and understanding of the Bible. We desire to
+                  create fellowship surrounding common interests, and to provide a
+                  space for believers to connect, learn, and fellowship with
+                  eachother.
+                </p>
+              </CardContent>
+            </Card>
+            <Card className="flex-1">
+              <CardContent className="text-center">
+                <HandHeart className="mx-auto my-5 mt-10" size={128} />
+                <h2 className="text-4xl font-bold py-5">Join us!</h2>
+                <span className="text-xl font-roboto">1 Thessalonians 5:11</span>
+                <p className="font-roboto text-2xl py-5">
+                  We invite you to become part of our growing community. Whether
+                  it&apos;s joining a Bible study, playing videogames with
+                  likeminded Christians, engaging in online discussions, or
+                  sharing your testimony, there&apos;s a place for you here.
+                  Together, we can encourage one another in faith and build
+                  lasting connections centered on Christ.
+                </p>
+              </CardContent>
+            </Card>
           </ul>
         </div>
       </section>
